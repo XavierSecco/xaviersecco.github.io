@@ -24,6 +24,7 @@ label.logo{
     font-weight: bold;
 }
 
+/*Sections*/
 nav ul{
     float: right;
     margin-right: 20px
@@ -44,6 +45,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 
+/*Hover*/
 a:hover{
 
     background: white;
@@ -57,6 +59,8 @@ a:hover{
     align-content: center;
     justify-content: center;
 }
+
+/*Image*/
 #avatar{
     margin: auto auto 20px auto;
     width: 60%;
@@ -64,6 +68,7 @@ a:hover{
     
 }
 
+/*Botton*/
 #download_cv{
     align-items: center;
     justify-content: center;
@@ -73,6 +78,7 @@ a:hover{
     font-size: 25px;
 }
 
+/*Text*/
 #description{
     display: flex;
     flex-direction: column;
@@ -101,6 +107,7 @@ div.hero h3{
     text-align: center;
 }
 
+/*Portfolio*/
 div.portfolio{
     height: 600px;
     width: 100%;
@@ -149,7 +156,7 @@ div.portfolio h1{
     transition-delay: .15s;
    }
 
-.card-info {
+.card .card-info {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -164,29 +171,29 @@ div.portfolio h1{
     transition-delay: .15s;
 }
 
-.card-info p{
+.card .card-info p{
     text-align: center;
    }
 
 /*Text*/
-.text-title {
+.card .text-title {
     font-size: 2rem;
     font-weight: 500;
 }
        
-.text-body {
+.card .text-body {
     letter-spacing: 1px;
     font-size: 1.2rem;
     margin: 5px 0 15px 0;
 }
 
 /*Button*/
-.card-button{
+.card .card-button{
     display: flex;
     align-content: center;
     justify-content: center;
 }
-.card-button button{
+.card .card-button button{
     width: 6em;
     padding: 0.6rem;
     outline: none;
@@ -200,7 +207,7 @@ div.portfolio h1{
 }
 
 /*Image*/
-.card-img {
+.card .card-img {
     width: 100%;
     height: 100%;
     border-radius: 1em;
@@ -225,16 +232,10 @@ div.portfolio h1{
     transform: translateY(0);
 }
    
-.card-button button:hover {
+.card .card-button button:hover {
     background: dodgerblue;
     color: #f5f5f5;
 }
-
-
-
-
-
-
 
 
 div.skills h1{
@@ -242,3 +243,32 @@ div.skills h1{
     margin-top: 30px;
     font-size: 50px;
 }
+
+
+
+/* From uiverse.io by @Tiagoadag */
+.skill_card {
+    width: 10em;
+    height: 10em;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .img_card {
+    width: 10em;
+    height: 10em;
+    background-color: #ffffff;
+    border-radius: 19px;
+    transition: all .2s;
+   }
+   
+   .img_card:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    background-color: #eeeeee;
+   }
+
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
