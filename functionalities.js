@@ -18,15 +18,22 @@ $(document).ready(function() {
           $('#social a').css('opacity','1');
         }
       );
-    });                    
+    });
+    
+    $(".to-top").hide();
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $(".to-top").fadeIn("300");
+        }else{
+            $(".to-top").fadeOut("300");
+        }
+    });
+  
+    $(".to-top").click(function(){
+        $("body, html").animate({
+          scrollTop: 0
+        }, 150);
+    });
   });
 
-  window.onscroll = function(){
-    if(document.documentElement.scrollTop > 100){
-      document.querySelector(".go-top-container")
-      .classList.add("show");
-    }else{
-      document.querySelector(".go-top-container")
-      .classList.remove("show");
-    }
-  }

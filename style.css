@@ -16,15 +16,15 @@ body{
 
 nav{
     background: #0F4C75;
-    height: 8vh;
+    height: 8.5vh;
     width: 100%;
 }
 
-label.logo{
+.logo{
+    display: inline-block;
     color: #cfecff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 20px;
+    font-size: 4vh;
+    padding: 2vh 2vh;
     font-weight: bold;
 }
 
@@ -32,67 +32,72 @@ label.logo{
 /*Sections*/
 h1{
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 50px;
+    margin-bottom: 1.875em;
+    font-size: 3.125em;
     color:#0F4C75;
 }
 
 nav ul{
     float: right;
-    margin-right: 20px
+    margin-right: 1.25em
 }
 
 nav ul li{
     display: inline-block;
     line-height: 8vh;
-    margin: 0 5px;
+    margin: 0 0.313em;
 }
 
 nav ul li a{
     color: #cfecff;
-    font-size: 20px;
+    font-size: 1.8em;
     font-weight: bold;
-    padding: 7px 13px;
-    border-radius: 15px;
+    padding: 0.438em 0.813em;
+    border-radius: 0.938em;
     text-transform: uppercase;
 }
 
+
 /*Hover*/
 a:hover{
-
     background: #cfecff;
     color: #3282B8;
     transition: .5s;
 }
 
-.btn-top{
+
+/*Go top button*/
+.to-top{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.btn-top a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0F4C75;
-    width: 70px;
-    height: 70px;
-    text-align: center;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 2em;
+    height: 2em;
+    font-size: 2.5em;
     border-radius: 50%;
-    box-shadow: rgb(76, 76, 76) 0px 0px 10px 1px;
+    background: #0F4C75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cfecff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.625em 0.125em;
 }
 
-.btn-top a:hover{
-    background: #cfecff;
-    transition: all .5s ease;
+.to-top:hover{
+    background:#cfecff;
+    color:#0F4C75;
+    -webkit-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -o-transition:all .2s ease;
 }
 
-.btn-top a:hover .rocket-svg{
-    fill:#0F4C75;
+.icon-rocket-1{
+    transform: rotate(-45deg)
 }
 
 
+/*Presentation*/
 #presentation{
     display: flex;
     flex-direction: column;
@@ -100,8 +105,8 @@ a:hover{
     justify-content: center;
 }
 
-/*Image*/
 
+/*Image*/
 .hero{
     background-image: url("coding-g2973e2192_1920.jpg");
     background-repeat: no-repeat;
@@ -117,37 +122,36 @@ div.hero div.item{
 }
 
 #avatar{
-    margin: auto auto 20px auto;
+    margin: auto auto 1.25em auto;
     width: 60%;
     height: auto;  
 }
+
 
 /*Botton*/
 #download_cv{
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: auto;
     margin: 0 auto auto auto;
-    padding: 10px 0;
-    font-size: 20px;
+    font-size: 2.5em;
     background-color:#0F4C75;
     color: #cfecff;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 0.938em;
     border-style: none;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 0.5em;
+    letter-spacing: 0.094em;
     text-transform: uppercase;
     transition: all .5s ease;
-    padding: 15px 5px;
+    padding: 0.3em;
 }
 
-
 #download_cv:hover {
- letter-spacing: 3px;
+ letter-spacing: 0.188em;
  background-color: #cfecff;
  color: #3282B8;
- box-shadow: rgb(192, 229, 255) 0px 7px 29px 0px;
+ box-shadow: rgb(192, 229, 255) 0 0.438em 1.813em 0;
 }
 
 
@@ -159,29 +163,30 @@ div.hero div.item{
     justify-content: center;
 }
 
-
 #description h3{
     text-align: center;
-    font-size: 40px;
-    margin: 10px 0;
+    font-size: 4em;
+    margin: 0.625em 0.625em;
     color: #cfecff;
 }
-
 
 
 /*Portfolio*/
 div.portfolio{
     height: 67vh;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 3.75em;
 }
 
 .portfolio h1{
     margin: 0;
+    font-size: 4.5em;
+    margin-bottom: 40px;
 }
 
 .projects{
     height: auto;
+    margin: 0 100px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -189,16 +194,16 @@ div.portfolio{
 }
 
 .portfolio-card {
-    width: 25%;
-    height: 80%;
+    width: 100vh;
+    height: 50vh;
     border-radius: 1em;
     padding: 1.5rem;
-    margin: 40px;
+    margin: 10px;
     background: #ffffff;
     position: relative;
     display: flex;
     transition: 0.4s ease-out;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.438em 1.25em rgba(0, 0, 0, 0.5);
     transition-delay: .15s;
 }
 
@@ -216,7 +221,7 @@ div.portfolio{
     opacity: 0;
     border-radius: 1em;
     transition-delay: .15s;
-   }
+}
 
 .portfolio-card .card-info {
     display: flex;
@@ -235,7 +240,8 @@ div.portfolio{
 
 .portfolio-card .card-info p{
     text-align: center;
-   }
+}
+
 
 /*Text*/
 .portfolio-card .text-title {
@@ -244,10 +250,11 @@ div.portfolio{
 }
        
 .portfolio-card .text-body {
-    letter-spacing: 1px;
+    letter-spacing: 0.063em;
     font-size: 1.2rem;
-    margin: 5px 0 15px 0;
+    margin: 0.313em 0 0.938em 0;
 }
+
 
 /*Button*/
 .portfolio-card .card-button{
@@ -255,18 +262,20 @@ div.portfolio{
     align-content: center;
     justify-content: center;
 }
+
 .portfolio-card .card-button button{
     width: 6em;
     padding: 0.6rem;
     outline: none;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25em;
     background: #3282B8;
     color: #cfecff;
     font-weight: bold;
     transition: 0.4s ease;
-    margin: 4px;
+    margin: 0.25em;
 }
+
 
 /*Image*/
 .portfolio-card .card-img {
@@ -279,6 +288,7 @@ div.portfolio{
     background: #ee9ca7;
     background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
 }
+
 
 /*Hover*/
 .portfolio-card:hover {
@@ -300,92 +310,72 @@ div.portfolio{
 }
 
 
-
 /*Skills*/
+.skills{
+    margin-top: 60px;
+}
 
-/* From uiverse.io by @Tiagoadag */
-
-/*
-.skill_card {
-    width: 10em;
-    height: 10em;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-    border-radius: 20px;
-    transition: all .3s;
-}
-   
-.img_card {
-    width: 10em;
-    height: 10em;
-    background-color: #ffffff;
-    border-radius: 19px;
-    transition: all .2s;
-}
-   
-.img_card:hover {
-    transform: scale(0.98);
-    border-radius: 20px;
-    background-color: #eeeeee;
-}
-*/
 .skills h1{
-    margin: 0 0 30px 0;
+    margin-bottom: 40px;
+    font-size: 4.5em
 }
+
 .skills-parent {
     display: grid;
     place-items: center;
-    margin: 0 25px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-
+    margin: 0 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1.875em;
+    grid-row-gap: 1.875em;
 }
     
 #skills-div1 { grid-area: 1 / 1 / 2 / 2; }
 #skills-div2 { grid-area: 1 / 2 / 2 / 3; }
 #skills-div3 { grid-area: 1 / 3 / 2 / 4; }
-#skills-div4 { grid-area: 1 / 4 / 2 / 5; }
-#skills-div5 { grid-area: 2 / 1 / 3 / 2; }
-#skills-div6 { grid-area: 2 / 2 / 3 / 3; }
-#skills-div7 { grid-area: 2 / 3 / 3 / 4; }
-#skills-div8 { grid-area: 2 / 4 / 3 / 5; }
+#skills-div4 { grid-area: 2 / 1 / 3 / 2; }
+#skills-div5 { grid-area: 2 / 2 / 3 / 3; }
+#skills-div6 { grid-area: 2 / 3 / 3 / 4; }
+#skills-div7 { grid-area: 3 / 1 / 4 / 2; }
+#skills-div8 { grid-area: 3 / 2 / 4 / 3; }
 
 .skills-div{
     display: grid;
     place-items: center;
-    height: 180px;
-    width: 180px;
+    height: 11.25em;
+    width: 11.25em;
     background-color: #cfecff;
-    border-radius: 15px;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0.938em;
+    box-shadow: 0 0.438em 1.25em rgba(0, 0, 0, 0.5);
+    transition:all .4s ease;
 }
 
 .skills-div:hover{
     -webkit-transform:scale(1.15);
     -moz-transform:scale(1.15);
     -o-transform:scale(1.15);
-    transition:all .2s ease;
-    -webkit-transition:all .2s ease;
-    -moz-transition:all .2s ease;
-    -o-transition:all .2s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -o-transition:all .4s ease;
 }
+
 
 /*Contact*/
 .contact{
-    margin-top: 60px;    
+    margin-top: 3.75em;    
 }
 
 .contact h1{
     margin: 0;
+    font-size: 4.5em;
 }
 
 .contact p{
     text-align: center;
     font-weight: bold;
     color:#0F4C75;
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 2em;
+    margin-bottom: 2.5em;
 }
 
 /* font awesome icons */
@@ -399,19 +389,22 @@ div.portfolio{
   text-align: center;
   width: 100%;
 }
+
 #social a {
-    width: 50px;
-    height: 50px;
-    line-height: 35px;
+    width: 3.125em;
+    height: 3.125em;
+    line-height: 2.188em;
     text-align: center;
     display: inline-block;
     position: relative;
-    border-radius: 5px;
+    border-radius: 0.313em;
     background-color: rgb(51, 51, 51);
 }
+
 #social a .fa {
     color: #FFF;
 }
+
 #social a:hover {
   -webkit-transform:scale(1.15);
   -moz-transform:scale(1.15);
@@ -422,33 +415,228 @@ div.portfolio{
   -o-transition:all .2s ease;
   z-index: 5;
 }
+
 #social a span {
   position: absolute;
   left: 50%;
   color: #FFF;
   display: none;
-  border-bottom: 2px solid #38c;
-  padding-bottom: 8px;
+  border-bottom: 0.125em solid #38c;
+  padding-bottom: 0.5em;
   background-color: rgb(79, 79, 79);
-  top: -30px;
-  height: 20px;
-  line-height: 20px;
-  border-radius: 5px;
+  top: -1.563em;
+  height: 1.25em;
+  line-height: 1.25em;
+  border-radius: 0.313em;
   font-size: 80%;
   white-space: nowrap;
 }
 
+
+/*Footer*/
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1B262C;
     height: 5vh;
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 .footer p{
     margin:auto;
     color: #cfecff;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 1440px) {
+    
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    #avatar{
+        width: 50%;
+    }
+    
+    
+    /*Botton*/
+    #download_cv{
+        font-size: 1.8em;
+    }
+    
+    /*Text*/
+    #description h3{
+        font-size: 2.6em;
+    }
+
+    #portfolio{
+        margin-top: 40px;
+    }
+    
+    .portfolio h1{
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    #skills{
+        margin-top: 40px;
+    }
+
+    #skills h1{
+        font-size: 3em;
+    }
+
+    #contact{
+        margin-top: 40px;
+    }
+
+    #contact h1{
+        font-size: 3em;
+    }
+
+    #contact p{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*Go top button*/
+    .to-top{
+        position: fixed;
+        bottom: 0.4em;
+        right: 0.4em;
+        font-size: 2em;
+    }
+
+    nav{
+    height: 8vh;
+    }
+    nav ul{
+        height: 8vh;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+
+    #avatar{
+        width: 50%;
+    }
+    
+    /*Botton*/
+    #download_cv{
+        font-size: 1.3em;
+    }
+    
+    /*Text*/
+    #description h3{
+        font-size: 2em;
+    }
+
+    #portfolio{
+        margin-top: 40px;
+    }
+    
+    .portfolio h1{
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    .projects {
+        display: grid;
+        place-items: center;
+        height: 65vh;
+        margin: 0 100px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.875em;
+        grid-row-gap: 1.875em;
+    }
+        
+    #card-div1 { grid-area: 1 / 1 / 2 / 2; }
+    #card-div2 { grid-area: 1 / 2 / 2 / 3; }
+    #card-div3 { grid-area: 2 / 1 / 3 / 2; }
+
+    /*Portfolio*/
+    div.portfolio{
+        height: 77vh;
+        width: 100%;
+        margin-top: 3.75em;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+        margin: 10px;
+    }
+
+    .skills-parent {
+        display: grid;
+        place-items: center;
+        margin: 0 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 1.875em;
+    }
+
+    #contact p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #portfolio{
+        margin-top: 30px;
+        height: 100vh;
+    }
+    
+    .portfolio h1{
+        height: ;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .projects {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        margin: 0 100px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1.875em;
+        grid-row-gap: 1.875em;
+    }
+        
+    #card-div1 { grid-area: 1 / 1 / 1 / 2; }
+    #card-div2 { grid-area: 2 / 1 / 2 / 2; }
+    #card-div3 { grid-area: 3 / 1 / 3 / 2; }
+
+
+    .skills h1{
+        margin-bottom: 30px;
+        font-size: 3em;
+    }
+    
+    .skills-parent {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 1.875em;
+    }
+        
+    #skills-div1 { grid-area: 1 / 1 / 2 / 2; }
+    #skills-div2 { grid-area: 1 / 2 / 2 / 3; }
+    #skills-div3 { grid-area: 2 / 1 / 3 / 2; }
+    #skills-div4 { grid-area: 2 / 2 / 3 / 3; }
+    #skills-div5 { grid-area: 3 / 1 / 4 / 2; }
+    #skills-div6 { grid-area: 3 / 2 / 4 / 3; }
+    #skills-div7 { grid-area: 4 / 1 / 5 / 2; }
+    #skills-div8 { grid-area: 4 / 2 / 5 / 3; }
+    
 }
